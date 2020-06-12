@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="d-flex justify-content-center text-align-center">
+        <div class="container m-2 p-2">
+            <h1>Editar Produto</h1>
+            <form action="" method="POST" id="product_create_form" class="p-2">
+                {% csrf_token %}
+                {{ form }}
+                <input type="submit" value="Editar" class="btn btn-success mt-2">
+            </form>
+        </div>
+    </div>
+{% endblock %}
